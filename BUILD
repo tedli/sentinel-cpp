@@ -9,7 +9,7 @@ configure_make(
         "--disable-libevent-regress",
         "--disable-openssl",
     ],
-    lib_source = "@com_github_libevent//:all",
+    lib_source = "@com_github_libevent_libevent//:all",
     out_lib_dir = "lib",
 )
 

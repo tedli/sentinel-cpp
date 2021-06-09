@@ -4,9 +4,9 @@ all_content = """filegroup(name = "all", srcs = glob(["**"]), visibility = ["//v
 
 def include_third_party_repositories():
     http_archive(
-        name = "com_github_libevent",
+        name = "com_github_libevent_libevent",
         build_file_content = all_content,
-	strip_prefix = "libevent-0d7d85c2083f7a4c9efe01c061486f332b576d28",
+        strip_prefix = "libevent-0d7d85c2083f7a4c9efe01c061486f332b576d28",
         urls = ["https://github.com/libevent/libevent/archive/0d7d85c2083f7a4c9efe01c061486f332b576d28.tar.gz"],
     )
 
