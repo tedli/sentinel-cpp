@@ -29,9 +29,9 @@ rules_foreign_cc_dependencies()
 # abseil-cpp
 http_archive(
   name = "com_google_absl",
-  urls = ["https://github.com/abseil/abseil-cpp/archive/14550beb3b7b97195e483fb74b5efb906395c31e.tar.gz"], # 2019-07-31
-  strip_prefix = "abseil-cpp-14550beb3b7b97195e483fb74b5efb906395c31e",
-  sha256 = "3df5970908ed9a09ba51388d04661803a6af18c373866f442cede7f381e0b94a",
+  urls = ["https://github.com/abseil/abseil-cpp/archive/refs/tags/20210324.2.tar.gz"],
+  strip_prefix = "abseil-cpp-20210324.2",
+  sha256 = "59b862f50e710277f8ede96f083a5bb8d7c9595376146838b9580be90374ee1f",
 )
 
 # Google Test
