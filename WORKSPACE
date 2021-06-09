@@ -13,7 +13,11 @@
 # limitations under the License.
 
 workspace(name = "com_alibaba_sentinel")
+
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("//bazel:third_party_repositories.bzl", "include_third_party_repositories")
+
+include_third_party_repositories()
 
 # Rule repository
 http_archive(
@@ -49,7 +53,3 @@ http_archive(
   strip_prefix = "benchmark-505be96ab23056580a3a2315abba048f4428b04e",
   sha256 = "0de43b6eaddd356f1d6cd164f73f37faf2f6c96fd684e1f7ea543ce49c1d144e",
 )
-
-load("//bazel:third_party_repositories.bzl", "include_third_party_repositories")
-include_third_party_repositories()
-
